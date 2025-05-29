@@ -8,7 +8,7 @@
 
 }
 body{
-  background-image: url('wallpaper.jpg'); 
+  background-image: url('tabella.jpg'); 
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
@@ -21,12 +21,17 @@ body{
 header{
 
   background-color: #024FBF;
-  padding: 137px;
+  padding: 97px;
   text-align: left;
+  width: 60%;
   color:white;
   float:left;
+  font-size: 20px;
   
-  
+}
+
+header img{
+  margin-top:20px;
 }
 /**************************************
  * NAV
@@ -38,7 +43,6 @@ nav{
   float: left;
   width: 100%;
   text-align: center;
-  border-radius: 100px;
 
 
 }
@@ -50,19 +54,25 @@ nav a{
   display: block;
   width: 100%;
   color: black;
+  border-radius: 10px;
+  color:white;
+  text-decoration: none;
 
 }
 
+nav a:hover {
+  background-color: #024FBF;; /* Hover */
+}
 /**************************************
- * 
+ * ARTICLE
  * 
  *  ***********************************/
-
 article{
 
   float: left;
   width: 60%;
   padding: 60px 20px; 
+  text-align: center;
 
 }
   article h1{
@@ -70,23 +80,34 @@ article{
     background-color: #04A2BC;
     padding:10px;
     border-radius: 10px;
+    color: white;
 
   }
+   article img{
+     margin-top:30px;
+     width: 600px;
+     height:350px;
+
+   }
 
 /**************************************
  * ASIDE
  * 
  *  ***********************************/
 aside{
-    background-color: #e5e5e5;
-  float: left;
-  width: 20%;
+    
+    float: left;
+    width: 40%;
     padding: 15px;
     margin-top: 7px;
     text-align: center;
+    border: 4px solid black;
+    color: white;
+    background-color: #024FBF;
+    
 }
 /**************************************
- * 
+ * X LE SOVRAPPOSIZIONI TRA GLI ELEMENTI 
  * 
  *  ***********************************/
 section::after{
@@ -99,10 +120,13 @@ section::after{
  * 
  *  ***********************************/
 footer{
-  background-color: #e5e5e5;
   text-align: center;
   padding: 30px;
   margin-top: 15px;
+  color:white;
+  background-color: #024FBF;
+  border: 8px solid white;
+  border-radius: 10px;
 }
 
 /**************************************
@@ -112,7 +136,33 @@ footer{
  img{
   width: 40%;
  }
+/**************************************
+ * LISTE NON ORDINATE
+ * 
+ *  ***********************************/
+ 
+ul{
+    list-style-type: none; /* Rimuove i puntini */
+    padding: 0;
+    margin: 0;
+}
 
+td strong{
+  color:white;
+
+}
+
+/**************************************
+ * GRASSETTO
+ * 
+ *  ***********************************/
+ strong{
+  color: #024FBF;
+ }
+/**************************************
+ * IN BASE AL DISPOSITIVO
+ * 
+ *  ***********************************/
 @media only screen and (max-width:900px){
 
 nav, article, aside {
@@ -120,5 +170,10 @@ nav, article, aside {
   width: 100%;
 }
 
+}
+
+.tutto{
+  width: 170%;
+  margin:0 auto;
 }
 
